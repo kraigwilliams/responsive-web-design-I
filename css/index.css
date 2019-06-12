@@ -1,3 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	 margin: 30px  80px;
+	 
+}
+	 
+
+nav li{
+	display:flex;
+justify-content: space-evenly;
+}
+ nav {
+	 display:flex;
+	 margin-bottom: 50px;
+ }
+ nav ul{
+margin-right:90px;
+
+ }
+ button{
+	padding:2px 30px;
+	background:white;
+	border:1px solid black;
+	font-size: 15px;
+
+ }
+ 
+ .index-header {
+	 display:flex;
+	 font-size:70px;
+	 justify-content: space-around;
+	 border-bottom: 3px solid black;
+	 padding-bottom: 30px;
+	 margin-bottom:50px;
+	 text-align:center;
+ }
+ .top{
+	 display:flex;
+ }
+ .top-left ,  .top-right{
+	 display:flex;
+	 flex-direction:column;
+	 width:40%;
+	justify-content: flex-start;
+	 
+
+	 
+ }
+ .main-bottom{
+	 display:flex;
+ }
+ .middle-img{
+	 width:100%;
+	 margin-top:30px;
+	 margin-bottom:30px;
+ }
+
+ .main{
+	 display:flex;
+	 border-bottom: 3px solid rgba(0, 0, 0, 0);
+	 padding-bottom:50px;
+	 margin-bottom:50px;
+	 flex-wrap:wrap;
+ }
+
+ footer{
+	 text-align:center;
+	 margin-top:20px;
+
+ }
+
+ .main-bottom{
+	 display:flex;
+	 border-bottom:2px solid black;
+	 padding-bottom:30px;
+ }
+
+ .bottom-left, .bottom-middle, .bottom-right{
+	 display:flex;
+	 flex-direction: column;
+ }
+
+ /*services*/
+
+ .service-container{
+ 
+	margin:50px 180px;
+ }
+ .service-header{
+	 border-bottom:2px solid black;
+	 padding-bottom:50px;
+	 margin-bottom:50px;
+	 text-align:justify;
+	
+ }
+
+ .services-header-img{
+	 width:100%;
+	 margin:20px;
+ }
+
+.services-main{
+	display:flex;
+	 border-bottom: 3px solid black;
+	 padding-bottom:50px;
+	 margin-bottom:50px;
+	flex-wrap: wrap;
+	 align-items: space-between;
+	 justify-content: space-between;
+	 width:100%;
+	 
+
+}
+
+.all-boxes{
+	border: 1px solid black;
+background:whitesmoke;
+padding:20px;
+margin:20px 0px 20px; 
+justify-content: flex-start;
+align-content: center;
+flex-wrap:wrap;
+width:430px;
+
+
+}
+
+
+.service-bottom{
+	display:flex;
+	text-align: justify;
+	justify-content: space-around;
+	margin:auto;
+	
+
+}
+
+.service-bottom-left ul {
+list-style-type: square;
+}
+.service-bottom-left{
+	margin-right:50px;
+
+}
+
+.section-footer{
+	text-align:center;
+}
+.button-services{
+border-radius: 8px;	
+padding:2px 30px;
+	background:white;
+	border:1px solid black;
+	font-size: 15px;
+}
+.services-h1{
+	font-size:25px;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+@media (max-width:800px){
+
+    
+}
