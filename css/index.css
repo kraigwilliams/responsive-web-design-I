@@ -64,6 +64,11 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+a{
+    text-decoration: none;
+    color:black;
+}
+
 
 .container{
 	 margin: 30px  80px;
@@ -71,17 +76,21 @@ h1, h2, h3, h4, h5 {
 }
 	 
 
-nav li{
-	display:flex;
-justify-content: space-evenly;
+nav ul {
+	display: flex;
+
 }
  nav {
 	 display:flex;
-	 margin-bottom: 50px;
- }
- nav ul{
-margin-right:90px;
+     margin-bottom: 50px;
+     
 
+     width:100%;
+    }
+ 
+
+ nav li{
+    margin-right:80px;
  }
  button{
 	padding:2px 30px;
@@ -146,87 +155,114 @@ margin-right:90px;
 	 flex-direction: column;
  }
 
- /*services*/
-
- .service-container{
  
-	margin:50px 180px;
- }
- .service-header{
-	 border-bottom:2px solid black;
-	 padding-bottom:50px;
-	 margin-bottom:50px;
-	 text-align:justify;
-	
- }
-
- .services-header-img{
-	 width:100%;
-	 margin:20px;
- }
-
-.services-main{
-	display:flex;
-	 border-bottom: 3px solid black;
-	 padding-bottom:50px;
-	 margin-bottom:50px;
-	flex-wrap: wrap;
-	 align-items: space-between;
-	 justify-content: space-between;
-	 width:100%;
-	 
-
-}
-
-.all-boxes{
-	border: 1px solid black;
-background:whitesmoke;
-padding:20px;
-margin:20px 0px 20px; 
-justify-content: flex-start;
-align-content: center;
-flex-wrap:wrap;
-width:430px;
-
-
-}
-
-
-.service-bottom{
-	display:flex;
-	text-align: justify;
-	justify-content: space-around;
-	margin:auto;
-	
-
-}
-
-.service-bottom-left ul {
-list-style-type: square;
-}
-.service-bottom-left{
-	margin-right:50px;
-
-}
-
-.section-footer{
-	text-align:center;
-}
-.button-services{
-border-radius: 8px;	
-padding:2px 30px;
-	background:white;
-	border:1px solid black;
-	font-size: 15px;
-}
-.services-h1{
-	font-size:25px;
-}
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
 @media (max-width:800px){
+nav {
+    
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    text-align:center;
+    align-content: center;
+}
 
+
+
+ 
+
+.logo{
+    width:200px;
+
+}
+a{
+    color:grey;
+}
+
+nav li *{
+    color:grey;
+    margin-right:5%;
+    border-bottom: 2 px solid grey;
+}
+
+
+.index-header img{
+    display:none;
+}
+}/* end media query*/
+
+        @media (max-width:500px){
+
+nav * {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
     
 }
+
+.index-header {
+    display:flex;
+    flex-direction:column;
+}
+.top{
+    display:flex;
+    flex-direction: column;
+}
+.top-left ,  .top-right{
+    display:flex;
+flex-direction: column;
+width:90%;
+margin-bottom:30px;
+}
+
+.main-bottom{
+    display:flex;
+    flex-direction: column;
+}
+nav ul li, nav .logo {
+    
+    color:grey;
+    margin-right:5%;
+    border-bottom:1px solid grey;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:20px;
+}
+nav .logo{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+width:320px;
+    padding-bottom:20px;
+    padding-left:80px;
+    padding-right:80px;
+
+}
+
+.index-header{
+    width:100%;
+}
+    
+ .bottom-left, .bottom-middle, .bottom-right{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:30px;
+}
+a{
+    color:grey;
+ 
+}
+
+
+footer{
+    margin-top:50px;
+}
+        } /*end media query*/
