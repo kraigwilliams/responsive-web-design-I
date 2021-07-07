@@ -1,3 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.container {
+    
+	 margin: 30px 80px;
+	 
+}
+
+
+
+nav ul {
+	display: flex;
+
+}
+ nav  {
+	 display:flex;
+     margin-bottom: 50px;
+    
+     flex-wrap: nowrap;
+
+     margin-right:auto;
+     margin-left:auto;
+    }
+
+ nav li{
+margin-right:7vw;
+ }
+ button{
+	padding:2px 30px;
+	background:white;
+	border:1px solid black;
+	font-size: 15px;
+
+ }
+ 
+ .index-header {
+     width:100%;
+	 display:flex;
+	 font-size:70px;
+	 justify-content: space-around;
+	 border-bottom: 3px solid black;
+	 padding-bottom: 30px;
+	 margin-bottom:50px;
+	 text-align:center;
+ }
+ .top{
+	 display:flex;
+ }
+ .top-left ,  .top-right{
+	 display:flex;
+	 flex-direction:column;
+	 width:40%;
+	justify-content: flex-start;
+	 
+
+	 
+ }
+ .main-bottom{
+	 display:flex;
+ }
+ .middle-img{
+	 width:100%;
+	 margin-top:30px;
+	 margin-bottom:30px;
+ }
+
+ .main{
+	 display:flex;
+	 border-bottom: 3px solid rgba(0, 0, 0, 0);
+	 padding-bottom:50px;
+	 margin-bottom:50px;
+	 flex-wrap:wrap;
+ }
+
+ footer{
+	 text-align:center;
+	 margin-top:20px;
+
+ }
+
+ .main-bottom{
+	 display:flex;
+	 border-bottom:2px solid black;
+	 padding-bottom:30px;
+ }
+
+ .bottom-left, .bottom-middle, .bottom-right{
+	 display:flex;
+	 flex-direction: column;
+ }
+
+ 
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+@media (max-width:800px){
 
+    
+nav  {
+    
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    text-align:center;
+    align-content: center;
+}
+
+
+nav ul li{
+    margin-left:auto;
+    margin-right:auto;
+    color:gray;
+}
+ 
+
+.logo{
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+
+
+}
+a{
+    color:grey;
+}
+
+nav li *{
+    color:grey;
+    margin-right:5%;
+    border-bottom: 2 px solid grey;
+}
+
+
+.index-header img{
+    display:none;
+}
+}/* end media query*/
+
+        @media (max-width:500px){
+
+nav * {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.index-header {
+    display:flex;
+    flex-direction:column;
+}
+.top{
+    display:flex;
+    flex-direction: column;
+}
+.top-left ,  .top-right{
+    display:flex;
+flex-direction: column;
+width:90%;
+margin-bottom:30px;
+}
+
+.main-bottom{
+    display:flex;
+    flex-direction: column;
+}
+nav ul li, nav .logo {
+    
+    color:grey;
+    margin-right:5%;
+    border-bottom:1px solid grey;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:20px;
+}
+nav .logo{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+width:320px;
+    padding-bottom:20px;
+    padding-left:80px;
+    padding-right:80px;
+
+}
+
+.index-header{
+    width:100%;
+}
+    
+ .bottom-left, .bottom-middle, .bottom-right{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:30px;
+}
+a{
+    color:grey;
+ 
+}
+
+
+footer{
+    margin-top:50px;
+}
+        } /*end media query*/
